@@ -4,7 +4,7 @@ import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
 import android.util.Log;
-
+import com.psykar.cookiemanager.CookieManagerPackage;
 import com.facebook.react.LifecycleState;
 import com.facebook.react.ReactInstanceManager;
 
@@ -32,6 +32,7 @@ public class BackgroundService extends Service {
                 .addPackage(new MainReactPackage())
                 .addPackage(new GcmPackage(intent))
                 .addPackage(new NotificationPackage())
+                .addPackage(new CookieManagerPackage())
                 .setUseDeveloperSupport(getBuildConfigDEBUG())
                 .setInitialLifecycleState(LifecycleState.RESUMED)
                 .build();
