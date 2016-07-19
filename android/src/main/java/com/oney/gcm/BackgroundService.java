@@ -46,7 +46,7 @@ public class BackgroundService extends Service {
         Log.d(TAG, "onDestroy");
         super.onDestroy();
         mReactInstanceManager.onHostPause();
-        mReactInstanceManager.onHostDestroy();
+        mReactInstanceManager.destroy();
         mReactInstanceManager = null;
     }
 
