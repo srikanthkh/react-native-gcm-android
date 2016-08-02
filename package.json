@@ -17,7 +17,7 @@
   ],
   "peerDependencies": {
     "react-native": ">=0.29.0",
-    "react-native-system-notification": "^0.2.0",
+    "react-native-system-notification": "github:srikanthkh/react-native-system-notification.git",
     "react-native-cookies": "^1.0.2"
   }
 }
