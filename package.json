@@ -18,6 +18,7 @@
   "peerDependencies": {
     "react-native": ">=0.29.0",
     "react-native-system-notification": "^0.2.0",
-    "react-native-cookies": "^1.0.2"
+    "react-native-cookies": "^1.0.2",
+    "react-native-sound": "^0.8.3"
   }
 }

@@ -22,4 +22,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.0.0'
     compile project(':react-native-system-notification')
     compile project(':react-native-cookies')
+    compile project(':RNSound')
 }

@@ -7,6 +7,7 @@ import android.util.Log;
 import com.psykar.cookiemanager.CookieManagerPackage;
 import com.facebook.react.LifecycleState;
 import com.facebook.react.ReactInstanceManager;
+import com.zmxv.RNSound.RNSoundPackage;
 
 import java.lang.reflect.Field;
 
@@ -33,6 +34,7 @@ public class BackgroundService extends Service {
                 .addPackage(new GcmPackage(intent))
                 .addPackage(new NotificationPackage())
                 .addPackage(new CookieManagerPackage())
+                .addPackage(new RNSoundPackage())
                 .setUseDeveloperSupport(getBuildConfigDEBUG())
                 .setInitialLifecycleState(LifecycleState.RESUMED)
                 .build();
